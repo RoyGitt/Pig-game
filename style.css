@@ -11,6 +11,7 @@ body {
     rgba(217, 9, 27, 1) 6.9%,
     rgba(22, 68, 150, 1) 75%
   );
+  font-size: 62.5%;
   font-family: "Nunito", sans-serif;
   height: 100%;
   width: 100%;
@@ -21,16 +22,16 @@ body {
 main {
   position: relative;
   display: flex;
-  border-radius: 10px;
+  border-radius: 1rem;
   background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0px 0px 32px -8px #000000;
+  box-shadow: 0px 0px 3.2rem -0.8rem #000000;
   overflow: hidden;
 }
 .player {
   text-align: center;
-  height: 600px;
-  width: 470px;
-  font-size: 40px;
+  height: 60rem;
+  width: 47rem;
+  font-size: 4rem;
   transition: all 0.75s;
   font-weight: 400;
 }
@@ -56,7 +57,7 @@ main {
 #score--0 {
   position: relative;
   top: 12%;
-  font-size: 80px;
+  font-size: 8rem;
   color: rgb(192, 53, 99);
   font-weight: 600;
 }
@@ -65,7 +66,7 @@ main {
 
   position: relative;
   top: 12%;
-  font-size: 80px;
+  font-size: 8rem;
   color: rgb(192, 53, 99);
 }
 .score {
@@ -73,26 +74,26 @@ main {
   font-size: 20px;
   font-weight: 600;
   color: white;
-  width: 180px;
-  margin: 250px auto;
-  padding: 20px;
-  border-radius: 10px;
+  width: 18rem;
+  margin: 25rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .current--0,
 .current--1 {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .btn {
   left: 50%;
   transform: translateX(-50%);
-  width: 180px;
-  padding: 14px;
-  border-radius: 30px;
+  width: 18rem;
+  padding: 1.4rem;
+  border-radius: 3rem;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 1.5rem;
   background: rgba(255, 255, 255, 0.8);
   color: rgb(65, 58, 58);
   font-weight: 600;
@@ -100,8 +101,8 @@ main {
   transition: all 0.2s;
 }
 .btn:active {
-  transform: translate(-50%, 10px);
-  box-shadow: 0px 0px 29px -16px #000000;
+  transform: translate(-50%, 1rem);
+  box-shadow: 0px 0px 29px -1.6rem #000000;
 }
 .btn:hover {
   letter-spacing: 1.5px;
@@ -123,25 +124,25 @@ main {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  width: 100px;
-  box-shadow: 0px 0px 30px 0px #6d6d6d;
+  width: 10rem;
+  box-shadow: 0px 0px 3rem 0px #6d6d6d;
   animation: dice 1.5s;
 }
 .fa-mug-hot {
-  margin-right: 10px;
+  margin-right: 1rem;
   color: rgb(150, 44, 44);
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 .fa-dice {
-  margin-right: 10px;
+  margin-right: 1rem;
   color: rgb(236, 68, 68);
-  font-size: 25px;
+  font-size: 2.5rem;
   vertical-align: middle;
 }
 .fa-sync-alt {
-  margin-right: 10px;
+  margin-right: 1rem;
   color: rgb(223, 87, 110);
-  font-size: 20px;
+  font-size: 2rem;
   vertical-align: middle;
 }
 
@@ -165,5 +166,37 @@ main {
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    max-width: 95%;
+  }
+  .btn {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .btn-new {
+    top: 15%;
+  }
+  .btn-hold {
+    top: 85%;
+  }
+  .btn-roll {
+    top: 92%;
+  }
+}
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 50%;
   }
 }
